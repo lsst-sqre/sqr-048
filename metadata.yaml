@@ -37,9 +37,20 @@ authors:
 copyright: "2020, Association of Universities for Research in Astronomy, Inc. (AURA)"
 
 # Description. A short, 1-2 sentence statemement used by document indices.
-description: "Default Kubernetes security settings for both clusters and pods are optimized for quick usability rather than security. This document provides hardening recommendations for GKE-hosted Kubernetes clusters and for Kubernetes resources managed by Rubin Observatory. These recommendations are intended primarily for the Rubin Science Platform and for other SQuaRE-run services."
+description: >-
+  Collected recommendations for security hardening of GKE-hosted
+  Kubernetes clusters and the Kubernetes configuration of deployed
+  applications.
 
 # Abstract, if available
+abstract: >-
+  Default Kubernetes security settings for both clusters and pods are
+  optimized for quick usability rather than security. This document
+  provides hardening recommendations for GKE-hosted Kubernetes clusters
+  and for Kubernetes resources managed by Rubin Observatory. These
+  recommendations are intended primarily for the Rubin Science Platform
+  and for other SQuaRE-run services.
+
 # abstract: >
 #           Write your paragraph
 #           here with multiple lines.
