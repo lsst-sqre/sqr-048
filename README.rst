@@ -2,10 +2,6 @@
    :target: https://sqr-048.lsst.io
 .. image:: https://github.com/lsst-sqre/sqr-048/workflows/CI/badge.svg
    :target: https://github.com/lsst-sqre/sqr-048/actions/
-..
-  Uncomment this section and modify the DOI strings to include a Zenodo DOI badge in the README
-  .. image:: https://zenodo.org/badge/doi/10.5281/zenodo.#####.svg
-     :target: http://dx.doi.org/10.5281/zenodo.#####
 
 ####################################
 Kubernetes hardening recommendations
@@ -14,7 +10,7 @@ Kubernetes hardening recommendations
 SQR-048
 =======
 
-Default Kubernetes security settings for both clusters and pods are optimized for quick usability rather than security. This document provides hardening recommendations for GKE-hosted Kubernetes clusters and for Kubernetes resources managed by Rubin Observatory. These recommendations are intended primarily for the Rubin Science Platform and for other SQuaRE-run services.
+Collected recommendations for security hardening of GKE-hosted Kubernetes clusters and the Kubernetes configuration of deployed applications.
 
 **Links:**
 
