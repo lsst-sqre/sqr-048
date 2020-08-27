@@ -17,7 +17,7 @@ See `SQR-037`_ and `SQR-041`_ for more complete security risk assessments of the
 Overview
 ========
 
-This document is divided into two major sections: ref:`Configuration for GKE clusters <gke>` and ref:`recommendations for Kubernetes resources <resources>`.
+This document is divided into two major sections: :ref:`Configuration for GKE clusters <gke>` and :ref:`recommendations for Kubernetes resources <resources>`.
 The former provides recommendations specific to Google Kubernetes Engine (GKE) for the overall cluster configuration.
 The latter is applicable to any Kubernetes hosting environment.
 
