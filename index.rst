@@ -9,7 +9,7 @@ Default Kubernetes security settings for both clusters and pods are optimized fo
 This document provides security hardening recommendations for GKE-hosted Kubernetes clusters and for Kubernetes resources managed by Rubin Observatory.
 These recommendations are intended primarily for the Rubin Science Platform and for other SQuaRE-run services.
 
-See `SQR-037`_ and `SQR-041`_ for more complete security risk assessments of the SQuaRE-run Kubernetes platforms.
+See SQR-037_ and SQR-041_ for more complete security risk assessments of the SQuaRE-run Kubernetes platforms.
 
 .. _SQR-037: https://sqr-037.lsst.io/
 .. _SQR-041: https://sqr-041.lsst.io/
@@ -85,8 +85,7 @@ These recommendations require prerequisites or more complex configuration and wi
    This is an improved way to access other Google Cloud services from within Kubernetes that also resolves several security issues with Google Cloud metadata endpoints.
    Setup for this is relatively complicated.
    See `Google's instructions <https://cloud.google.com/kubernetes-engine/docs/how-to/workload-identity#enable_on_new_cluster>`__ for more information.
-#. Configure a ``PodSecurityPolicy`` and enable pod security admission controller.
-   The controller cannot be enabled until appropriate ``PodSecurityPolicy`` resources are in place, since the default is to prevent all pods from starting.
+#. Enable the ```PodSecurity`` admission controller <https://cloud.google.com/kubernetes-engine/docs/how-to/podsecurityadmission>`__ and configure Pod Security Standards policies for all services.
 #. Deploy pods without strong performance requirements using the GKE Sandbox.
    This runs the pod with a special wrapper that intercepts all system calls and applies aggressive sandboxing, making a container escape much more difficult.
    The cost is a noticeable performance degredation for pods that make a lot of system calls.
